@@ -9,9 +9,14 @@ public class FileDecryptor {
 	// Create a program that opens the file created by FileEncryptor and display
 	// the decrypted message to the user in a JOptionPane.
 	
+	public static void main(String[] args) {
+		FileDecryptor fd = new FileDecryptor();
+		fd.decryptFile();
+	}
+	
 	public void decryptFile() {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("src/_02_Encrypt_Decrypt/textFile.txt"));
+			BufferedReader br = new BufferedReader(new FileReader("src/_02_File_Encrypt_Decrypt/textFile.txt"));
 			
 			String line = br.readLine();
 			

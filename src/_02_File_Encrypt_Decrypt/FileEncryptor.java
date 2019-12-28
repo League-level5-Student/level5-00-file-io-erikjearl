@@ -20,7 +20,7 @@ public class FileEncryptor {
 		String strng = new String(arr);
 		
 		try {
-			FileWriter fw = new FileWriter("src/_02_Encrypt_Decrypt/textFile.txt");
+			FileWriter fw = new FileWriter("src/_02_File_Encrypt_Decrypt/textFile.txt");
 			fw.write(strng);
 			fw.close();
 		} catch (IOException e) {
